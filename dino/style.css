@@ -48,17 +48,19 @@
     width: 50px;
     height: 50px;
 
-    background-image: url('img/Normal.png');
+    background-image: url('img/dino.png');
     background-size: 50px;
     z-index: 3;
 }
 
+/* Classe pulo */
 .pulo {
     position: relative;
 
     animation: pulo 0.5s ease-in-out;
 }
 
+/* Eventos  em cada tempo da animação*/
 @keyframes pulo {
     0%, 100%{
         transform: translateY(0);
@@ -68,4 +70,31 @@
         transform: translateY(-110px);
     }
 
+}
+
+/* nuvem */
+#nuvem {
+    position: absolute;
+    top: 30%;
+    left: 95%;
+
+    width: 90px;
+    height: 22px;
+    background-image: url(img/cloud.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+#gameover {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    visibility: hidden;
+
+    width: 250px;
+    height: 20px;
+    background-image: url(img/gameover.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
